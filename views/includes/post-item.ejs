@@ -1,0 +1,28 @@
+<article class="post-item">
+  <table align="center">
+    <tr>
+      <th>Roll Number</th>
+      <th>&nbsp;:&nbsp;</th>
+      <th><%= post.roll %></th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>&nbsp;:&nbsp;</th>
+      <th><%= post.name %></th>
+    </tr>
+    <tr>
+      <th>CGPA</th>
+      <th>&nbsp;:&nbsp;</th>
+      <th><%= post.cgpa %></th>
+    </tr>
+  </table>
+  <br>
+  <div class="post-actions">
+    <form action="/all-students/<%= post.id %>/delete" method="POST">
+      <button class="btn">Delete Student</button>
+    </form>
+    <a class="btn" href="/all-students/<%= post.id %>/edit">Edit Student</a>
+  </div>
+</article>
+
+

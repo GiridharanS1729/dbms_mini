@@ -1,0 +1,7 @@
+CREATE TABLE details (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    roll varchar(10) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    cgpa varchar(5) NOT NULL
+);
+dbname=stud

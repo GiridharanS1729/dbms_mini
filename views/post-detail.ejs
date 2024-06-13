@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head', { title: post.roll }) %>
+    <link rel="stylesheet" href="/styles/posts.css" />
+  </head>
+
+  <body>
+    <%- include('includes/header') %>
+    <main id="post-detail">
+      <h1><%= post.roll %></h1>
+      <section id="post-meta">
+        |
+        <time datetime="<%= post.date %>"><%= post.humanReadableDate %></time>
+      </section>
+      <hr />
+      <section>
+        <p id="body"><%= post.body %></p>
+      </section>
+    </main>
+  </body>
+</html>
